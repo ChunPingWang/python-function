@@ -1,0 +1,17 @@
+id: 8b61b224-6cbd-4716-9c23-813c4db16532
+timestamp: 2023-10-31T05:53:54Z
+username: chunpingwang
+source: TAP-GUI
+accelerator:
+  name: python-function
+  source:
+    image: reg.microservice.tw/tanzu-application-platform/tap-packages@sha256:8c1dddd43e46d785e585612d99704d226c4afca840761f95ff019215f0381230
+fragments:
+  - name: tap-workload
+    source:
+      image: reg.microservice.tw/tanzu-application-platform/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  functionName: main
+  includeTap: true
+  interfaceType: http
+  projectName: python-function
